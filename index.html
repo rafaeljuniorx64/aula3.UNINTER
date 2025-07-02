@@ -1,123 +1,110 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="./estilo.css">
-
-<title>Curitiba</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body>
-<header>
-<nav class="navbar navbar-default">
-  <div class="container">
-   <div class="navbar-header">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  <a class="navbar-brand" href="#">Curitiba</a>
-	  </div>
-   <div class="collapse navbar-collapse" id="menu">
-<ul class="nav navbar-nav" >
-<li><a href="#sobre-nos">Sobre nós</a></li>
-<li><a href="#clientes">Galeria</a></li>
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<section class="container">
-<div id="sobre-nos" class="container">
-<h1> Sobre nós</h1>
-<img class="img-responsive" src="./img/sobreNos.jpg"/>
-<h4> Photo by Gabriel Rodrigues on Unsplash</h4>
+<style>
+     table {
+    width: 80%;
+    margin: 20px auto;
+    border-spacing: 5px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0,191,255,0.4);
+    border-collapse: collapse;
+    
+  }
+  th, td { 
+    text-align: center;
+   
+  }
+  th {
+    color: white;
+  }
+     tr:hover {
+    background-color: #d0ebff;
+    }
+  a:hover img {
+    filter: brightness(0.85);
+    }
+   .meu-botao {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: block;
+    margin: 30px auto; /* <- isso centraliza o botão na página */
+  }
 
-<div class="panel-group"id="painel-sobre">
-<div class="panel panel-default">
-<div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p1">
-<h3 class="panel-title"  > Desde 1693</h3>
-</div>
+  .meu-botao:hover {
+    background-color: #009acd;
+    transform: scale(1.05);
+  }
 
-<div id="p1"class="collapse">
-<p class="panel-body" > Curitiba é a capital do Paraná, um dos três Estados que compõem a Região Sul do Brasil. Sua fundação oficial data de 29 de março de 1693 </p>
-</div>
-</div>
+  .meu-botao:active {
+    transform: scale(0.97);
+  }
+  .caixa {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid gray;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .caixa:hover {
+    display: inline-block;
+    background-color: red;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0 auto;
+  }
+</style>
+<body style="background-color: #00FFFF;">
+    <h1 style="text-align: center; color: red">Rafael Carvalho Bento Júnior</h1>
+    <p style="font-size: 25px; text-align: justify;">
+        Meu nome é Rafael e eu sou natural de Minas Gerais. Estou muito interessado nessa nova área de Análise e Desenvolvimento de Sistemas.
+    </p>
+    <div style="text-align: center;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px; font-size: 20px;"> Corrida </li>
+        <li style="margin-bottom: 10px; font-size: 20px;"> Ciclismo </li>
+        <li style="margin-bottom: 10px; font-size: 20px;">Motociclismo</li>
+    </ul>
 
-<div class="panel panel-default">
-<div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p2">
-<h3 class="panel-title" > Terra do pinhão</h3>
-</div>
-
-<div id="p2"class="collapse">
-<p  class="panel-body"> Curitiba é uma palavra de origem Guarani: kur yt yba quer dizer "grande quantidade de pinheiros, pinheiral"</p>
-</div>
-</div>
-<div class="panel panel-default">
-<div class="panel-heading" data-parent="#painel-sobre" data-toggle="collapse" data-target="#p3">
-<h3 class="panel-title"> O inverno em Curitiba</h3>
-</div>
-<div id="p3"class="collapse">
-<p class="panel-body"> A temperatura média da cidade no inverno é de 13 °C, podendo chegar a números negativos nos dias mais frios, de madrugada e de manhã. 
-Os meses de julho e agosto são os mais frios do ano, mas também os menos chuvosos. As manhãs de inverno costumam vir acompanhadas de uma neblina matinal <br>
-fonte: ricmais.com.br
-</p>
-</div>
-</div>
-</div>
-</section>
-<Section class="container">
-<h1 id="clientes" class="titulo-clientes"> Galeria</h1>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="./img/foto1.jpg" alt="...">
-      <div class="carousel-caption">
-	  <h3> Photo by Cassiano Psomas on pexels</h3>
-        ...
-      </div>
+    <img src="img/marc-marquez-ducati-team.jpg" style="border-radius: 15px;" width="300px"></img>
     </div>
-    <div class="item">
-      <img src="./img/foto2.jpg" alt="...">
-      <div class="carousel-caption">
-	  <h3> Photo by Koala on Unsplash</h3>
-        ...
-      </div>
+    <table style="margin: auto;">
+       <tr>
+            <td style="font-size: 20px;">Itália</td>
+            <th><img src="img/italia.jpg" style="border-radius: 15px;" widht="100px"></img></th>
+       </tr>
+        <tr>
+            <td style="font-size: 20px;">Espanha</td>
+            <th><img src="img/espanha.jpg" style="border-radius: 15px;" width="280px"></img></th>
+        </tr>
+        <tr>
+            <td style="font-size: 20px;">Dubai</td>
+            <th><img src="img/dubai2.jpg" style="border-radius: 15px;" width="280px"></img></th>
+        </tr>
+    </table>
+    <p style="font-size: 20px; text-align: center;"> Clique na imagem abaixo para saber mais detalhes sobre o Mundial de motovelocidade:</p>
+    <div class="caixa" width="250px"; style="margin-left:640px;">
+    <a href="https://www.motogp.com/"><img style="text-align: center;" src="img/Moto_Gp_logo.svg.png" width="200px"> 
+    </img>
+    </a>
     </div>
-	<div class="item">
-      <img src="./img/foto3.jpg" alt="...">
-      <div class="carousel-caption">
-	   <h3> Photo by Cassiano Psomas on Unsplash</h3>
-        ...
-      </div>
-    </div>
-    ...
-  </div>
+    <button class="meu-botao" onclick="alert('Bem vindo a minha primeira página! Espero que tenha gostado!')">Clique aqui para ver uma mensagem!</button>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<script src="./jquery.js"></script>
-<script src="./bootstrap/js/bootstrap.min.js"></script>
-	
 </body>
 </html>
